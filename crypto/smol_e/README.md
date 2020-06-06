@@ -16,3 +16,14 @@ C2 =
 
 Author: AC
 ## Solution
+As the title entails, you should look for an exploit related to small `E`'s, specifically `E = 3`. One such instance of this is [Coppersmith's short-pad attack](https://en.wikipedia.org/wiki/Coppersmith's_attack#Coppersmith’s_short-pad_attack), an application of [Coppersmith's theorem](https://en.wikipedia.org/wiki/Coppersmith's_attack).  
+Reading through the section on the short-pad attack on Wikipedia, we can see it is used when two identical messages have been poorly padded before being encrypted, perfectly fitting the scenario.
+
+Instead of spending the brain power to try to figure out what the heck this attack is and how to program it, you can use [someone else's brain power](https://github.com/pwang00/Cryptographic-Attacks/blob/master/Public Key/RSA/coppersmith_short_pad.sage). This can be copied into SageMath (math system built on top of Python)'s [code evaluator](https://sagecell.sagemath.org/).
+
+When done, this returns something similar to `1426051161596273413795556654328320105145439332147585418507576775870780450590379567453641429082640842935901398525237698534587016076610446383728128936582478631369081375319103785503713430762835018940932512662482247881629813321166872870577809910090459052486979919351413039719867069160`.  
+This cannot be converted into ASCII at this stage, though. If you try, you get a bunch of gibberish.  
+In Coppersmith's short-pad attack, the number of bits in padding, `m`, is defined as `n // e2` bits. (n = num of bits in the public modulus, e = public encryption exponent).
+This padding needs to be removed (via `large_num >> m`), and then the number can be converted to ASCII.
+
+Flag: `flag{n0t_4_v3ry_sm0l_fl4g}`
