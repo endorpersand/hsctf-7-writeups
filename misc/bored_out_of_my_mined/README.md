@@ -1,5 +1,5 @@
-## Bored Out of my Mined
-# Problem
+# Bored Out of my Mined
+## Problem
 This top Notch challenge will craft some difficulty for some.
 
 DM @JC01010 on discord if you have issues concatenating the flag.
@@ -10,14 +10,14 @@ DM @JC01010 on discord if you have issues concatenating the flag.
 
 Author: JC01010
 
-# Solution
+## Solution
 In the files, we can start off looking at the latest.log file. Here, we see Herobrine giving us part 1 of the flag as well as clue to part 2:
 ```
 [2:16:52] [Server thread/INFO]: <Herobrine> pt 1: flag{d0_5
 [2:16:52] [Server thread/INFO]: <Herobrine> Tell me about myself!
 ```
 
-This hint leads us to his player data, in ./playerdata/{uuid}.dat. As this is a Minecraft save, .dat data is stored in NBT format. This NBT format can be read through an NBT reader, like [webNBT](https://irath96.github.io/webNBT/) or [NBTExplorer](https://github.com/jaquadro/NBTExplorer). Here, in his discovered recipes (recipeBook > recipes > 73), is part 2 of the flag and the clue to part 3.
+This hint leads us to his player data, in ./playerdata/{uuid}.dat. As this is a Minecraft save, .dat data is stored in NBT format. This NBT format can be read through an NBT reader, like [webNBT](https://irath96.github.io/webNBT/) or [NBTExplorer](https://github.com/jaquadro/NBTExplorer). Here, in his discovered recipes (recipeBook > recipes > 73), is part 2 of the flag and the clue to part 3.  
 ![Part 2](./images/part2.png)
 
 This hint leads us to look at the icon, icon.png. By opening this file in a text editor and looking at the end of the file, XML data can be found.
@@ -70,7 +70,7 @@ This finally leads us to level.dat, where in Data > GameRules > maxCommandChainL
 
 Flag: `flag{d0_57@R5_R0Tat3?_y35¡}`
 
-# Additional Clue
+## Additional Clue
 There is an additional hidden clue (albeit kind of useless), found in Herobrine's inventory. In his inventory, we see that he has 11 blocks: `minecraft:spawner`, `minecraft:dead_bush`, `minecraft:nether_bricks`, `minecraft:infested_stone`, `minecraft:nether_brick_stairs`, `minecraft:enchanting_table`, `minecraft:dead_bush`, `minecraft:glass_pane`, `minecraft:brick_stairs`, `minecraft:infested_stone`, `minecraft:melon`. 
 
 As this Minecraft save file is in 1.15.2, the items are stored with their namespaced ID, which replaced numeric IDs in [The Flattening of Minecraft 1.13](https://minecraft.gamepedia.com/1.13/Flattening). The numeric IDs can still be found online, so by converting each block to their old numeric ID, you get `52 32 112 97 114 116 32 102 108 97 103`, which when converted to ASCII is `4 part flag`.
