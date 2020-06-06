@@ -43,3 +43,5 @@ From here, you can copy `requestOptions` and the `fetch` Promise chain into the 
     .then(res => res.json())
     .then(data => console.log(data));
 ```
+
+Flag: `flag{cl13nt_51de_5uck5_135313531}`

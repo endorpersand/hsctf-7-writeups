@@ -6,6 +6,6 @@ Bet you can't log in.
 
 # Solution
 ![Not the solution](./images/notsoln.png)
-:thinking: This problem might be impossible. Sorry.
+:thinking: I'm not sure how to do this problem. This problem might be impossible. Sorry.
 
 Flag: `flag{cl13nt_51de_5uck5_135313531}`
