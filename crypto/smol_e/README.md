@@ -23,7 +23,7 @@ Instead of spending the brain power to try to figure out what the heck this atta
 
 When done, this returns something similar to `1426051161596273413795556654328320105145439332147585418507576775870780450590379567453641429082640842935901398525237698534587016076610446383728128936582478631369081375319103785503713430762835018940932512662482247881629813321166872870577809910090459052486979919351413039719867069160`.  
 This cannot be converted into ASCII at this stage, though. If you try, you get a bunch of gibberish.  
-In Coppersmith's short-pad attack, the number of bits in padding, `m`, is defined as `n // e2` bits. (n = num of bits in the public modulus, e = public encryption exponent).
-This padding needs to be removed (via `large_num >> m`), and then the number can be converted to ASCII.
+In Coppersmith's short-pad attack, the number of bits in padding, `m`, is defined as `n // e2` bits. (n = num of bits in the public modulus, e = public encryption exponent).  
+So, this padding needs to be removed (via `large_num >> m`), and then finally the number can be converted to ASCII.
 
 Flag: `flag{n0t_4_v3ry_sm0l_fl4g}`
