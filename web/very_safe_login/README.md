@@ -3,6 +3,7 @@
 Bet you can't log in.
 
 ![Webpage](./images/webpage.png)
+Author: Madeleine
 
 # Solution
 ![Not the solution](./images/notsoln.png)

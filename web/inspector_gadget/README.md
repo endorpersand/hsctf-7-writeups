@@ -2,6 +2,7 @@
 # Problem
 
 ![Webpage](./images/webpage.png)
+Author: Madeleine
 
 # Solution
 Open Developer Tools and look around in the HTML. The flag is found in a comment.

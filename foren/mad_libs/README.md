@@ -2,6 +2,7 @@
 # Problem
 We all know that officer speeches are just mad libs, anyway.
 ![Mad Libs](./images/Mad_Libs.png)
+Author: JC01010
 
 # Solution
 https://stylesuxx.github.io/steganography/

@@ -2,6 +2,7 @@
 # Problem
 
 ![Webpage](./images/webpage.png)
+Author: Madeleine
 
 # Solution
 In Developer Tools > Sources > debt-simulator.web.hsctf.com > static > js > App.js, there is a code explaining what happens when the button is pressed. 
