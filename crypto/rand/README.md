@@ -14,3 +14,7 @@ Connect with nc crypto.hsctf.com 6002.
 
 Author: PMP
 ## Solution
+Randomization 1 & 2 both use an [LCG](https://en.wikipedia.org/wiki/Linear_congruential_generator) to generate the next value in the "randomized" sequence.  
+From the Wikipedia article, an LCG can be described with the recurrence relation <code>X<sub>n + 1</sub> = a * X<sub>n</sub> + b</code>.
+
+The multiplier, increment, and modulus for the LCG can be found in the disassembled ELF binary.
