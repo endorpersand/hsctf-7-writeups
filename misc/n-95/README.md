@@ -42,7 +42,7 @@ actual 0100 ???????? 01100110 01101100 01100001 01100111 01111011
 ![Mask remapped to QR code](./images/maskmap.png)  
 (Mask remapped to position on QR code)
 
-Now that we have the mask, we can continue reading through the QR code and use the XOR mask to convert the display bits into their correct corresponding value. Two chunks at the end do have 1 or 2 missing bits, but their bits can be determined by context.
+As we can see, there's a pattern in the XOR mask. This pattern propagates through the entire QR code, allowing us to unXOR the rest of the QR code and to read the bits. Two chunks at the end do have 1 or 2 missing bits, but their bits can be determined by context.
 
 Again, do read for better understanding on the Wikipedia page: [QR_code#Encoding](https://en.wikipedia.org/wiki/QR_code#Encoding), [QR_code#Decoding_example](https://en.wikipedia.org/wiki/QR_code#Decoding_example)
 
