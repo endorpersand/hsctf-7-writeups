@@ -1,7 +1,7 @@
 ## Emojis
 # Problem
-Esolang reversing!
-[Emojis.txt](./Emojis.txt)
+Esolang reversing!  
+[Emojis.txt](./Emojis.txt)  
 Author: JC01010
 
 # Solution
