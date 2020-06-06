@@ -65,5 +65,4 @@ next:
     12df:	5d 	popq	%rbp
     12e0:	c3 	retq
 ```
-Here, the LCG relation is <code>25214903917x + 11 (mod 2<sup>64</sup>)</code>.
-(64 because of the limitation of the 64-bit register.)
+Here, the LCG relation is <code>25214903917x + 11 (mod 2<sup>64</sup>)</code> (64 because of the limitation of the 64-bit register).
