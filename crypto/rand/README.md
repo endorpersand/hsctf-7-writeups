@@ -18,7 +18,7 @@ Randomization 1 & 2 both use an [LCG](https://en.wikipedia.org/wiki/Linear_congr
 From the Wikipedia article, an LCG can be described with the recurrence relation <code>X<sub>n + 1</sub> = a * X<sub>n</sub> + b</code>.
 
 The multiplier, increment, and modulus for the LCG can be found in the disassembled ELF binary. In a UNIX terminal, `objdump -d file` disassembles the ELF binary.  
-By scanning through the disassembled code, you can figure out that the function controlling the LCG is the function `next`.
+By scanning through the disassembled code, you can figure out that the function controlling the LCG is the function `next` and you can use that to calculate the sequence that the LCG returns.
 ### Rand 1
 ```
 next:
