@@ -39,7 +39,7 @@ Finally, comparing them with their actual values, we can find the XOR mask.
 actual 0100 ???????? 01100110 01101100 01100001 01100111 01111011
    xor 1000 ???????? 10000110 00011000 01101100 00111000 00101000
 ```
-![Mask remapped to QR code](./images/maskmap.png)
+![Mask remapped to QR code](./images/maskmap.png)  
 (Mask remapped to position on QR code)
 
 Now that we have the mask, we can continue reading through the QR code and use the XOR mask to convert the display bits into their correct corresponding value. Two chunks at the end do have 1 or 2 missing bits, but their bits can be determined by context.
