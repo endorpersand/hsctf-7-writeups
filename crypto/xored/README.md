@@ -16,3 +16,22 @@ Flag ^ Key 1 ^ Key 2 ^ Key 3 ^ Key 4 ^ Key 5 = 306d34c5b6dda0f53c7a0f5a2ce4596cf
 Author: AC
 
 ## Solution
+XOR or ^ is the [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or) operator.
+A property of XOR is that `(a ^ b) ^ b == a`.
+
+For example, take `(35 ^ 17) ^ 17`.
+`35 ^ 17 == 50`
+`50 ^ 17 == 35`
+so `(35 ^ 17) ^ 17 = 35`
+[Here](https://www.youtube.com/watch?v=vzyM_PRaZuc)'s a 7 minute video that goes more in depth.
+
+In the puzzle, the flag is XORed with all 5 keys. So to get the flag, you want to XOR the XORed flag with other XOR keys until you get rid of all the other keys.
+`(F^1^2^3^4^5) ^ (2^3^5) ^ (1^3) ^ (3^4)` clears every key except F, giving you the flag.
+
+```
+(F^1^2^3^4^5) ^ (2^3^5) = F^1^4 	(keys 2, 3, 5 are removed)
+(F^1^4) ^ (1^3) = F^3^4 	        (key 1 is removed, key 3 is reintroduced)
+(F^1^4) ^ (1^4) = F	                (keys 1, 4 are removed, leaving the flag)
+```
+
+Flag: `flag{n0t_t00_h4rD_h0p3fully}`
