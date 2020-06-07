@@ -43,10 +43,12 @@ def main():
     else:
         print('Wrong...')
 ```
-This is quite confusing still, but in reality, `e` and the functions that create `e` make it look more complicated than it seems.
-`a(s)` can be simplified to `[c * 2 - 60 for c in s]`
-`b(s, t)` creates a list by adding the two elements with matching indexes across the two lists and subtracting 50 from that number.
-All in all, `e(s)` simplifies to `lambda s: bytes( (c * 3 - 105) ^ 5 - 30 for c in s )`.
-This function can be reversed very easily (`lambda bt: ''.join([chr( (((b + 30) ^ 5) + 105) // 3 ) for b in bt])`), allowing us to get the flag using the checkstring.
+This is quite confusing still, but in reality, `e` and the functions that create `e` make it look more complicated than it seems.  
+
+`a(s)` can be simplified to `[c * 2 - 60 for c in s]`  
+`b(s, t)` creates a list by adding the two elements with matching indexes across the two lists and subtracting 50 from that number.  
+
+All in all, `e(s)` simplifies to `lambda s: bytes( (c * 3 - 105) ^ 5 - 30 for c in s )`.  
+This function can be reversed very easily (`lambda bt: ''.join([chr( (((b + 30) ^ 5) + 105) // 3 ) for b in bt])`), allowing us to get the flag using the checkstring.  
 
 Flag: `flag{5tr4ng3_d1s45s3mbly_1c0a88}`
