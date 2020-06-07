@@ -11,7 +11,7 @@ As evidenced by the challenge description, this challenge is about [QR codes](ht
 Most but not all of the QR code can be recovered by filling in partially covered pixels and adding the shape of the corners.  
 ![Partially Recovered QR Code](./images/recoveredqr.png)
 
-While we don't have the left side of the QR code, this recovered QR is *almost* enough to recover all the data, because in a QR code, the QR code data is stored on the right side of a QR code (The left side is used to store data to help fix errors if the right side is obscured).
+While we don't have the left side of the QR code, this recovered QR is *almost* enough to recover all the data, because in a QR code, the QR code data is stored on the right side of a QR code. (The left side is used to store data to help fix errors if the right side is obscured.)
 
 So how do we recover the data? Well, a QR code is saved in 8-bit chunks, which can be converted to binary. These blocks start from the bottom-right and move up and left, like depicted below.  
 ![Layout & Encoding](./images/layout.png)  

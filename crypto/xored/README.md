@@ -17,12 +17,15 @@ Author: AC
 
 ## Solution
 XOR or ^ is the [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or) operator.
-A property of XOR is that `(a ^ b) ^ b == a`.
+A property of XOR is that `(a ^ b) ^ b = a`.
 
-For example, take `(35 ^ 17) ^ 17`.
-`35 ^ 17 == 50`
-`50 ^ 17 == 35`
-so `(35 ^ 17) ^ 17 = 35`
+For example, take `(35 ^ 17) ^ 17`.  
+```
+35 ^ 17 = 50
+50 ^ 17 = 35
+
+so, (35 ^ 17) ^ 17 = 35
+```
 [Here](https://www.youtube.com/watch?v=vzyM_PRaZuc)'s a 7 minute video that goes more in depth.
 
 In the puzzle, the flag is XORed with all 5 keys. So to get the flag, you want to XOR the XORed flag with other XOR keys until you get rid of all the other keys.

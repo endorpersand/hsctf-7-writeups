@@ -1,7 +1,7 @@
 # Meta Mountains
 ## Problem
-It seems that mountains are a great place for hiding secrets. Maybe you could find this one!
-![Mountain](./images/mountains_hsctf.png)
+It seems that mountains are a great place for hiding secrets. Maybe you could find this one!  
+![Mountain](./images/mountains_hsctf.jpg)  
 Author: wooshi
 
 ## Solution

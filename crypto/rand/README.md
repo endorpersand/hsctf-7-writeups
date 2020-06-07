@@ -38,7 +38,7 @@ In AT&T syntax, the -b, -w, -l, -q after an instruction represents the type of n
 [Here](https://www.cs.yale.edu/flint/cs421/papers/x86-asm/asm.html)'s more info on x86 Assembly. 
 
 Differences in x86-64 Assembly:
- * 64-bit registers exist, and they start `%r`, replacing the `%e` of 32-bit registers.
+ * 64-bit registers exist, and they start with `%r`, replacing the `%e` of 32-bit registers.
  * Like how a 16-bit register is the lower 16 bits of its corresponding 32-bit register (e.g. %ax and %eax), a 32-bit register is the lower 32 bits of its corresponding 64-bit register (e.g. `%eax` and `%rax`).
 Also `movz` means to zero-out a register and then move the bits over.
 

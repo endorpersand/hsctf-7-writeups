@@ -5,7 +5,7 @@
 Author: Madeleine
 
 ## Solution
-In Developer Tools > Sources > debt-simulator.web.hsctf.com > static > js > App.js, there is a code explaining what happens when the button is pressed. 
+In Developer Tools > Sources > debt-simulator.web.hsctf.com > static > js > App.js, there is code explaining what happens when the button is pressed. 
 ```js
   const onClick = () => {
     const isGetCost = Math.random() > 0.4 ? true : false;
