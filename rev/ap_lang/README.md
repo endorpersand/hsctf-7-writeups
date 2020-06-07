@@ -7,7 +7,7 @@ Author: AC
 ## Solution
 As with most of the Reverse Engineering problems, the code simply takes your input, runs it through some functions, and checks it against a checkstring.
 
-Firstly, it is plugged into `transpose`, which takes a char at one index of the string and moves it to another specifically defined index.
+Firstly, it is plugged into `transpose`, which takes a char at one index of the string and moves it to another specifically defined index.  
 Secondly, it is plugged into `xor`, which XORs specifically defined values to the ASCII codes of each char of the string.
 Then, it does this two more times.
 

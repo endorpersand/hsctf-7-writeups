@@ -11,9 +11,9 @@ Here, it takes your string, plugs it in through `strawberryShuffle`, then `vanil
 
 So really, this problem is like most of the other Reverse Engineering problems, running the inverse of each function backwards on the checkstring, except you just need to include an additional step of finding the checkstring bytes (which you can do by printing the bytes to stdout).
 
-`strawberryShuffle` reverses the array of bytes.
-`vanillaShuffle` increments a byte in an array if its index is divisible by 0, otherwise it decrements the byte.
-`chocolateShuffle` moves each byte in an array two elements rightward (if index is divisible by 0) or leftward (if index is not divisible by 0).
-`toppings` adds a specified amount to each element.
+`strawberryShuffle` reverses the array of bytes.  
+`vanillaShuffle` increments a byte in an array if its index is divisible by 0, otherwise it decrements the byte.  
+`chocolateShuffle` moves each byte in an array two elements rightward (if index is divisible by 0) or leftward (if index is not divisible by 0).  
+`toppings` adds a specified amount to each element.  
 
 Flag: `flag{ic3_cr34m_byt3s_4r3_4m4z1n9_tr34ts}`

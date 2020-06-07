@@ -7,7 +7,7 @@ Author: AC
 ## Solution
 As with most of the Reverse Engineering problems, the code simply takes your input, runs it through some functions, and checks it against a checkstring.
 
-Firstly, it's plugged through `shift`, which decreases the ASCII code of each char by the index of the char in the string.
+Firstly, it's plugged through `shift`, which decreases the ASCII code of each char by the index of the char in the string.  
 Secondly, it's plugged through `shift2`, which increases the ASCII code of each char by the number of digits in the ASCII code.
 
 Simply create inverses of `shift` and `shift2`, and run the checkstring in reverse, to get the flag.
